@@ -50,7 +50,7 @@ In each subdirectory `Fig6codesAug_21`, `Fig8codesAug_21`, ... are the codes:
    format for the paper. (How? my IT expert friend Brandon did it for me.)
 
 NOTE: These codes are extremely NOT-optimized. For example, with multigrid
-I should be computing f12t,f24tt on dxx = 2,4 grids. Instead, I compute
+I should be computing f24tt, f4 on dxx = 2,4 grids. Instead, I compute
 them all on the same dxx=1 grid. But then I use the `fill3D2to1.m` and
 `fill3D4to1.m` to interpolate, from the coarse-grid values only, onto the
 dxx=1 finer grid. Also for example, instead of backprojecting onto the
